@@ -1,0 +1,115 @@
+{
+    "iphone": [
+      {
+        "id": 1,
+        "count": 1,
+        "smalImg1": "",
+        "smalImg2": "",
+        "smalImg3": "",
+        "smalImg4": "",
+        "img": "https://content2.rozetka.com.ua/goods/images/big_tile/364623745.jpg",
+        "name": "Iphone 15 Pro 128Gb Темно-Фиолетовий",
+        "price": "89990"
+      },
+      {
+        "id": 2,
+        "count": 1,
+        "smalImg1": "",
+        "smalImg2": "",
+        "smalImg3": "",
+        "smalImg4": "",
+        "img": "https://content.rozetka.com.ua/goods/images/big_tile/284983606.jpg",
+        "name": "Iphone 15 Pro Max 128Gb Золотий",
+        "price": "89990"
+      },
+      {
+        "id": 3,
+        "count": 1,
+        "smalImg1": "",
+        "smalImg2": "",
+        "smalImg3": "",
+        "smalImg4": "",
+        "img": "https://content2.rozetka.com.ua/goods/images/big_tile/221270813.jpg",
+        "name": "Iphone 14 128Gb Сріблястий",
+        "price": "79990"
+      },
+      {
+        "id": 4,
+        "count": 1,
+        "smalImg1": "",
+        "smalImg2": "",
+        "smalImg3": "",
+        "smalImg4": "",
+        "img": "https://content2.rozetka.com.ua/goods/images/big_tile/364623745.jpg",
+        "name": "Iphone 14 Pro 256Gb Темно-Фиолетовий",
+        "price": "99990"
+      },
+      {
+        "id": 5,
+        "count": 1,
+        "smalImg1": "",
+        "smalImg2": "",
+        "smalImg3": "",
+        "smalImg4": "",
+        "img": "https://content.rozetka.com.ua/goods/images/big_tile/284983606.jpg",
+        "name": "Iphone 14 Pro Max 256Gb Золотий",
+        "price": "99990"
+      },
+      {
+        "id": 6,
+        "count": 1,
+        "smalImg1": "",
+        "smalImg2": "",
+        "smalImg3": "",
+        "smalImg4": "",
+        "img": "https://content2.rozetka.com.ua/goods/images/big_tile/221270813.jpg",
+        "name": "Iphone 14 Pro 256Gb Сріблястий",
+        "price": "99990"
+      },
+      {
+        "id": 7,
+        "count": 1,
+        "smalImg1": "",
+        "smalImg2": "",
+        "smalImg3": "",
+        "smalImg4": "",
+        "img": "https://content2.rozetka.com.ua/goods/images/big_tile/364623745.jpg",
+        "name": "Iphone 15 128Gb Темно-Фиолетовий",
+        "price": "84990"
+      },
+      {
+        "id": 8,
+        "count": 1,
+        "smalImg1": "",
+        "smalImg2": "",
+        "smalImg3": "",
+        "smalImg4": "",
+        "img": "https://content.rozetka.com.ua/goods/images/big_tile/284983606.jpg",
+        "name": "Iphone 15 Pro Max 128Gb Золотий",
+        "price": "89990"
+      },
+      {
+        "id": 9,
+        "count": 1,
+        "smalImg1": "",
+        "smalImg2": "",
+        "smalImg3": "",
+        "smalImg4": "",
+        "img": "https://content2.rozetka.com.ua/goods/images/big_tile/221270813.jpg",
+        "name": "Iphone 15 Pro 128Gb Сріблястий",
+        "price": "89990"
+      },
+      {
+        "id": 10,
+        "count": 1,
+        "smalImg1": "",
+        "smalImg2": "",
+        "smalImg3": "",
+        "smalImg4": "",
+        "img": "https://content2.rozetka.com.ua/goods/images/big_tile/364623745.jpg",
+        "name": "Iphone 15 Pro Max 256Gb Темно-Фиолетовий",
+        "price": "109990"
+      }
+    ]
+  }
+  
