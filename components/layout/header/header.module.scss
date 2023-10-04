@@ -1,0 +1,117 @@
+.header {
+  @media (max-width: 537px) {
+    border-bottom: 1px solid #ededed;
+    height: 80px;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    .logo {
+      //  border: 1px solid red;
+      @media (max-width: 613px) {
+        // border: 1px solid red;
+        flex-direction: row-reverse;
+        text-align: end;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      h1 {
+        font-weight: 700;
+        color: #008ecc;
+        font-size: 30px;
+      }
+    }
+
+    .rightTextBlock {
+      @media (max-width: 857px) {
+        flex: 0 0 60%;
+      }
+      @media (max-width: 703px) {
+        justify-content: end;
+        gap: 1rem;
+      }
+      @media (max-width: 613px) {
+        display: none;
+      }
+      flex: 0 1 65%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      //border: 1px solid red;
+      .searchBlock {
+        @media (max-width: 703px) {
+          gap: 0.5rem;
+          .inputRightImg {
+            display: none;
+          }
+        }
+        background: #f3f9fb;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        border-radius: 12px;
+        height: 48px;
+        input {
+          outline: none;
+          background: #f3f9fb;
+          width: 500px;
+          @media (max-width: 857px) {
+            width: auto;
+          }
+        }
+      }
+      .cartBlock {
+        @media (max-width: 745px) {
+          span {
+            display: none;
+          }
+        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
+  .botomMenu {
+    @media (max-width: 537px) {
+      display: none;
+    }
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    margin-top: 2rem;
+    .menuFlex {
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 100%;
+      height: 70px;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        padding: 0.6rem 1rem;
+        background: #f3f9fb;
+        border-radius: 20px;
+        width: 120px;
+        text-align: center;
+
+        &:hover {
+          transition: ease-in-out 0.5s;
+          background: #008ecc;
+          color: white;
+        }
+      }
+    }
+  }
+}
