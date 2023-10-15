@@ -1,11 +1,11 @@
 import Layout from "@/components/layout/Layout";
 import "./globals.scss";
 import type { Metadata } from "next";
-import { Merriweather } from "next/font/google";
+import { Roboto } from "next/font/google";
 
-const merriweather = Merriweather({
+const roboto = Roboto({
   subsets: ["cyrillic", "latin"],
-  weight: ["300", "700", "400"],
+  weight: ["300", "700", "400", "900"],
   style: "normal",
   display: "swap",
   variable: "--font-main",
@@ -23,9 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={merriweather.className}>
-        <Layout />
-        <main className="container">{children}</main>
+      <body className={roboto.className}>
+        <Layout>
+          <main className="container">{children}</main>
+        </Layout>
       </body>
     </html>
   );

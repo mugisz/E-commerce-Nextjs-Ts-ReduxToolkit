@@ -1,0 +1,119 @@
+.carusel {
+  width: 100%;
+  background: #212844;
+
+  position: relative;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  border-radius: 16px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 160px; /* Диаметр полушария (двойной радиус) */
+    height: 140px; /* Высота полушария (радиус) */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &::before {
+    top: -60px; /* Поднимаем полушарие вверх на половину его высоты */
+    left: 0;
+  }
+
+  &::after {
+    bottom: -60px; /* Опускаем полушарие вниз на половину его высоты */
+    right: 0;
+  }
+
+  .sliderTrack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // border: 1px solid red;
+    margin-top: 2%;
+
+    height: 316px;
+    .sliderTextBlock {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      padding-left: 4rem;
+      width: 60%;
+      // border: 1px solid red;
+
+      h1,
+      span,
+      p {
+        color: white;
+      }
+      p {
+        font-size: 22px;
+      }
+      h1 {
+        font-size: 40px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+      span {
+        font-size: 17px;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
+
+// Изменение цвета активной точки
+.slick-dots {
+  li {
+    button {
+      &::before {
+        color: #fafafa; // Замените на нужный цвет
+      }
+    }
+  }
+}
+
+// Изменение цвета неактивных точек
+/* Изменение цвета активной точки */
+.slick-dots li.slick-active button::before {
+  color: #ffffff; /* Замените на нужный цвет */
+}
+
+/* Изменение цвета неактивных точек */
+.slick-dots li button::before {
+  color: #ffffff; /* Замените на нужный цвет */
+  left: 30%;
+}
+
+.slick-dots {
+  bottom: 1px;
+  right: 30%; /* Замените на нужное значение сдвига */
+}
+
+.slick-prev,
+.slick-next {
+  //   border-radius: 50%;
+  //   width: 66px; /* Замените на нужное значение ширины */
+  //   height: 66px; /* Замените на нужное значение высоты */
+  //   top: 50%; /* Размещение стрелок вертикально посередине */
+  //   transform: translateY(-50%);
+  //   //border: 2px solid white;
+  display: none;
+}
+/* Изменение размера иконки стрелок (можно также указать размер иконки) */
+.slick-prev:before,
+.slick-next:before {
+  //   color: #ffffff;
+  display: none;
+  //   font-size: 30px; /* Замените на нужное значение размера иконки */
+}
+
+.slick-prev {
+  left: -48px; /* Размещение стрелки "назад" слева */
+}
+
+.slick-next {
+  right: -48px; /* Размещение стрелки "вперед" справа */
+}
