@@ -18,6 +18,8 @@ export default class Carousel extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
+      // autoplay: true,
+      // autoplaySpeed: 2000,
     };
     return (
       <div className="carusel">
