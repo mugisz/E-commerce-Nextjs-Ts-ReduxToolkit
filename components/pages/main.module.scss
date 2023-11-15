@@ -1,33 +1,44 @@
 .main {
   margin: 2rem 0;
-  .topSection {
-    .topTitle {
-      font-size: 22px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      color: #666666;
-      &::after {
-        content: "";
-        width: 28%;
-        height: 2px;
-        background-color: #008ecc;
-        display: block;
-        margin: 0.5rem 0 2rem 0;
-      }
-    }
+
+  .topTitle {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #666666;
     .spanColor {
       color: #008ecc;
     }
+    &::after {
+      content: "";
+      width: 28%;
+      height: 2px;
+      background-color: #008ecc;
+      display: block;
+      margin: 0.5rem 0 2rem 0;
+    }
+  }
+  .topSection {
     .cardFlex {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem; // media zrobutu ---->>>>>>>> flex-wrap: wrap;
       .cardItem {
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        box-shadow: hsla(210, 8%, 62%, 0.2) 0px 8px 24px;
         border-radius: 20px;
         padding: 1rem;
         width: 250px;
         height: 280px;
         display: flex;
         flex-direction: column;
-
+        .imageBlock {
+          height: 250px;
+          //border: 1px solid red;
+          display: flex;
+          padding-top: 0.3rem;
+          align-items: center;
+          justify-content: center;
+        }
         align-items: center;
         position: relative;
         transition: 0.2s ease-in-out;
@@ -63,6 +74,34 @@
           p {
             color: white;
           }
+        }
+      }
+    }
+  }
+  .gadgetCatrgory {
+    .flexCategory {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      .categoryItem {
+        width: 250px;
+        padding: 2rem;
+        border: 3px solid;
+        border-color: #008ecc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        justify-content: space-between;
+        border-radius: 10% / 50%;
+        img {
+          min-height: 100px;
+          min-width: 110px;
+        }
+        .categoryName {
+          font-size: 20px;
+          text-transform: uppercase;
+          font-weight: 700;
         }
       }
     }
