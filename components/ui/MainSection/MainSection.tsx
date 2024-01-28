@@ -1,11 +1,25 @@
 import Image from "next/image";
 
 import style from "@/components/pages/Main/main.module.scss";
-import "../TopGadgetMenu/mainCard.scss";
+import "./mainCard.scss";
 
 import { popularItemMas } from "@/components/services/unchanget";
 import Link from "next/link";
-export default function TopGadgetMenu() {
+import Carousel from "../Carousel/Carousel";
+
+import rewiewLogo from "@/images/rewiewsPhoto.svg";
+
+import rewiewStar from "@/images/rewiewsStart.svg";
+
+export default function MainSection() {
+  const rewiews = [
+    { img: rewiewLogo, name: "Olga Andrus" },
+    { img: rewiewLogo, name: "Vika Sheba" },
+    { img: rewiewLogo, name: "Inna Octos" },
+    { img: rewiewLogo, name: "Olga Andrus" },
+    { img: rewiewLogo, name: "Vika Sheba" },
+    { img: rewiewLogo, name: "Inna Octos" },
+  ];
   return (
     <div>
       <section className={style.topSection}>
@@ -100,6 +114,29 @@ export default function TopGadgetMenu() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+      <section className={style.rewiewsBlock}>
+        <h1 className={style.topTitle}>
+          Top
+          <span className={style.spanColor}> Rewiew</span>
+        </h1>
+        <div className={style.rewiewsFlex}>
+          {rewiews?.map((rewiew, key) => (
+            <div className={style.rewiewsItem} key={key}>
+              <Image src={rewiew.img} alt="logo" width={79.86} height={79.2} />
+              <div className={style.rewiewsTextBlock}>
+                <span>{rewiew.name}</span>
+                <div className={style.rewiewStarFlex}>
+                  <Image src={rewiewStar} alt="logo" width={32} height={42} />
+                  <Image src={rewiewStar} alt="logo" width={32} height={42} />
+                  <Image src={rewiewStar} alt="logo" width={32} height={42} />
+                  <Image src={rewiewStar} alt="logo" width={32} height={42} />
+                  <Image src={rewiewStar} alt="logo" width={32} height={42} />
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </div>

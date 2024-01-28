@@ -2,6 +2,7 @@
 
 import type { PropsWithChildren } from "react";
 import Header from "./header/Header";
+import Footer from "./Footer/Footer";
 import Head from "next/head";
 
 export default function Layout({ children }: PropsWithChildren) {
@@ -9,6 +10,7 @@ export default function Layout({ children }: PropsWithChildren) {
     <div>
       <Header />
       {children}
+      <Footer />
     </div>
   );
 }

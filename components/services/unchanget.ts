@@ -1,7 +1,7 @@
 import { Category, Popular } from "@/components/interfaces/MainDataInterface";
 
 
-export const categoryMas:Category[] = [
+export const categoryMap:Category[] = [
   {
     img: "https://content2.rozetka.com.ua/goods/images/big_tile/364623745.jpg",
     name: "Iphone",
