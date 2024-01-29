@@ -56,10 +56,10 @@ export default function MainSection() {
           <span className={style.spanColor}> Category</span>
         </h1>
         {/* <div className={style.flexCategory}>
-          {categoryMas?.map((mas) => (
+          {categoryMas?.map((product) => (
             <div className={style.categoryItem}>
-              <Image width={100} height={125} src={mas.img} />
-              <p className={style.categoryName}>{mas.name}</p>
+              <Image width={100} height={125} src={product.img} />
+              <p className={style.categoryName}>{product.name}</p>
             </div>
           ))} */}
         <div className="ag-format-container">
@@ -114,6 +114,34 @@ export default function MainSection() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+      <section className={style.topSection}>
+        <h1 className={style.topTitle}>
+          Еhe newest novelties
+          <span className={style.spanColor}> Iphones</span>
+        </h1>
+        <div className={style.cardFlex}>
+          {popularItemMas?.map((mas) => (
+            <div className={style.cardItem}>
+              <div className={style.imageBlock}>
+                <Image alt="iphone" src={mas.img} width={100} height={125} />
+              </div>
+              <p className={style.phoneName}>{mas.name}</p>
+              <div className={style.priceBlock}>
+                <span className={style.price}>₴ {mas.price}</span>
+                <strike className={style.grab}>₴ {mas.price + 2400}</strike>
+              </div>
+              <button className={style.cardBtn}>Add to card</button>
+              <div className={style.absoluteRightBLock}>
+                <p>
+                  56%
+                  <br />
+                  OFF
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
       <section className={style.rewiewsBlock}>

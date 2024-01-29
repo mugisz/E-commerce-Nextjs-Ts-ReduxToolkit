@@ -23,6 +23,11 @@
       display: flex;
       flex-direction: row;
       gap: 1rem; // media zrobutu ---->>>>>>>> flex-wrap: wrap;
+      @media (max-width: 1166px) {
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
       .cardItem {
         box-shadow: hsla(210, 8%, 62%, 0.2) 0px 8px 24px;
         border-radius: 20px;
@@ -107,6 +112,10 @@
       display: flex;
       justify-content: center;
       gap: 3rem;
+      @media (max-width: 974px) {
+        gap: 1rem;
+        justify-content: space-between;
+      }
       .categoryItem {
         width: 250px;
         padding: 2rem;
@@ -137,8 +146,16 @@
       flex-wrap: wrap;
       gap: 0.1rem;
       justify-content: space-between;
-
+      @media (max-width: 1166px) {
+        flex-wrap: wrap;
+      }
+      @media (max-width: 611px) {
+        justify-content: center;
+      }
       .rewiewsItem {
+        @media (max-width: 1166px) {
+          width: 300px;
+        }
         margin: 1rem 0;
         width: 25%;
         background: #2a8dff;
@@ -149,7 +166,8 @@
 
         padding: 1rem;
 
-        box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+          rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
         .rewiewsTextBlock {
           display: flex;
           flex-direction: column;
