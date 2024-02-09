@@ -5,12 +5,13 @@ import style from "./header.module.scss";
 import "./burger.scss";
 
 import Image from "next/image";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 import logoImg from "@/images/Group 2.svg";
 import list from "@/images/list.svg";
 import search from "@/images/search.svg";
 import busket from "@/images/buy.svg";
-import Link from "next/link";
 
 const menuLinks = [
   { title: "Iphone", links: "/iphone" },
@@ -21,6 +22,7 @@ const menuLinks = [
 ];
 export default function Header() {
   const [menuState, SetTogle] = React.useState(false);
+  const { pathname } = useRouter();
   return (
     <header className={style.header}>
       <div className="container">
