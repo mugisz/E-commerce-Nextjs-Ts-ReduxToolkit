@@ -22,23 +22,25 @@ const menuLinks = [
 ];
 export default function Header() {
   const [menuState, SetTogle] = React.useState(false);
-  const { pathname } = useRouter();
+  // const { pathname } = useRouter();
+  // console.log("pathname" + pathname);
   return (
     <header className={style.header}>
       <div className="container">
         <nav className={style.nav}>
           <div className={style.logo}>
-            <Image src={logoImg} width={48} height={48} />
+            <Image alt="image" src={logoImg} width={48} height={48} />
             <Link href="/">
               <h1> Ecommerce</h1>
             </Link>
           </div>
           <div className={style.rightTextBlock}>
             <div className={style.searchBlock}>
-              <Image src={search} width={18} height={18} />
+              <Image alt="image" src={search} width={18} height={18} />
 
               <input type="text" placeholder="Search essentials and more ..." />
               <Image
+                alt="image"
                 className={style.inputRightImg}
                 src={list}
                 width={24}
@@ -48,7 +50,7 @@ export default function Header() {
 
             <div className={style.cartBlock}>
               <Link href="/busket">
-                <Image src={busket} width={24} height={24} />
+                <Image alt="image" src={busket} width={24} height={24} />
               </Link>
 
               <Link href="/busket">
@@ -81,7 +83,7 @@ export default function Header() {
                     </Link>
 
                     <Link href="/busket">
-                      <Image src={busket} width={24} height={24} />
+                      <Image alt="image" src={busket} width={24} height={24} />
                     </Link>
                   </div>
                 </Link>

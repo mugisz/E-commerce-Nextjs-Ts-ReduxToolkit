@@ -1,9 +1,9 @@
-import ItemsMap from "@/components/ui/ItemsMap/ItemsMap";
+// import ItemsMap from "@/components/ui/ItemsMap/ItemsMap";
 
-export default function page() {
-  return (
-    <>
-      <ItemsMap />
-    </>
-  );
-}
+// export default function page() {
+//   return (
+//     <>
+//       <ItemsMap />
+//     </>
+//   );
+// }
