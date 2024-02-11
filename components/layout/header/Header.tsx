@@ -5,7 +5,7 @@ import style from "./header.module.scss";
 import "./burger.scss";
 
 import Image from "next/image";
-import { useRouter } from "next/router";
+//import { useRouter } from "next/router";
 import Link from "next/link";
 
 import logoImg from "@/images/Group 2.svg";
